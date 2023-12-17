@@ -1,0 +1,303 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+:root {
+  --white-color: #ffffff;
+  --primary-color: #ff4400;
+  --section-bg-color: #f0f8ff;
+  --dark-color: #000000;
+  --grey-color: #d0d1d1;
+  --p-color: #717275;
+  --body-font-family: "Inter", sans-serif;
+  --h5-font-size: 24px;
+  --p-font-size: 20px;
+  --copyright-text-font-size: 16px;
+  --product-link-font-size: 14px;
+  --custom-link-font-size: 12px;
+  --font-weight-thin: 100;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 700;
+  --font-weight-black: 900;
+
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
+  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
+    "Liberation Mono", "Courier New", monospace;
+  --bs-gradient: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.15),
+    rgba(255, 255, 255, 0)
+  );
+}
+@font-face {
+  font-family: "Futura PT Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Futura PT Light"),
+    url("../assets/fonts/FuturaCyrillicLight.woff") format("woff");
+}
+
+.s-container {
+  width: 100%;
+  align-items: center;
+  height: 110vh;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+}
+.s-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.s-container .s-text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  top: 60%;
+  left: auto;
+}
+.s-container .s-text h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 4em;
+  line-height: 1.1em;
+  letter-spacing: 1px;
+  font-family: "Righteous", sans-serif;
+}
+.section .category {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 150px 50px 150px;
+}
+.section .category .cat-left {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.section .category .cat-left h1 {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 40px;
+  letter-spacing: 1px;
+  text-transform: none;
+  line-height: 1.3em;
+  font-family: "Futura PT Light";
+}
+.section .category .cat-left p {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 17px;
+  letter-spacing: 0.5px;
+  line-height: 1.6em;
+  color: #000;
+  text-align: justify;
+  font-family: "Futura PT Light";
+}
+.section .category .cat-right {
+  width: 600px;
+  height: 400px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.section .category .cat-right.nd {
+  width: 600px;
+}
+.section .category .cat-right.nd img {
+  border-radius: 12px;
+}
+.section .category .cat-right img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.section .container-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 150px 50px 150px;
+}
+.section .container-card .row {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  cursor: pointer;
+}
+.section .container-card .row .col-lg-1 {
+  width: 100%;
+  margin: 50px;
+}
+.section .container-card .row .col-lg-1 h2 {
+  font-size: 45px;
+  font-weight: 600;
+
+  font-family: "Futura PT Light";
+}
+.section .container-card .row .col-lg-2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 50px;
+}
+.section .container-card .row .col-lg-2 .product-thumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  width: 35%;
+  position: relative;
+  transition: all 0.5s ease-out;
+}
+.section .container-card .row .col-lg-2 .product-thumb .product-img {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.section .container-card .row .col-lg-2 .product-thumb .product-img img:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px,
+    rgba(0, 0, 0, 0.22) 0px 10px 10px;
+}
+.section .container-card .row .col-lg-2 .product-thumb .product-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.2s ease-in-out;
+}
+.section .container-card .row .col-lg-2 .product-thumb .product-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 20px;
+  padding: 20px;
+}
+.section
+  .container-card
+  .row
+  .col-lg-2
+  .product-thumb
+  .product-top
+  .product-alert {
+  background: var(--white-color);
+  color: var(--p-color);
+  font-size: var(--custom-link-font-size);
+  font-weight: 600;
+  padding: 3px 10px;
+  font-family: "Futura PT Light";
+}
+.section .container-card .row .col-lg-2 .product-thumb .product-info {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 20px;
+}
+.section .container-card .row .col-lg-2 .product-thumb .product-info .align {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.section .container-card .row .col-lg-2 .product-thumb .product-info .align h5 {
+  font-size: 24px;
+  font-weight: 800;
+  padding: 10px 0px 10px 0px;
+  font-family: "Futura PT Light";
+  letter-spacing: 1.5px;
+}
+.section .container-card .row .col-lg-2 .product-thumb .product-info .align p {
+  font-size: 14px;
+  color: #6c757d;
+  font-family: "Futura PT Light";
+  letter-spacing: 1.5px;
+}
+.section
+  .container-card
+  .row
+  .col-lg-2
+  .product-thumb
+  .product-info
+  .product-price {
+  color: #6c757d;
+}
+@media (max-width: 576px) {
+  .section .category .cat-left {
+    margin: 20px;
+    width: 100%;
+  }
+  .section .category {
+    flex-direction: column;
+  }
+  .section .container-card .row .col-lg-2 {
+    flex-direction: column;
+  }
+  .section .container-card .row .col-lg-2 .product-thumb {
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .section .category .cat-left {
+    margin: 20px;
+    width: 100%;
+  }
+  .section .category {
+    flex-direction: column;
+  }
+  .section .container-card .row .col-lg-2 {
+    flex-direction: column;
+  }
+  .section .container-card .row .col-lg-2 .product-thumb {
+    width: 100%;
+  }
+}
+@media (max-width: 992px) {
+  .section .category .cat-left {
+    margin: 20px;
+    width: 100%;
+  }
+  .section .category {
+    flex-direction: column;
+  }
+  .section .container-card .row .col-lg-2 {
+    flex-direction: column;
+  }
+  .section .container-card .row .col-lg-2 .product-thumb {
+    width: 100%;
+  }
+}

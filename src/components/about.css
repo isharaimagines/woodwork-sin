@@ -1,0 +1,178 @@
+.container-to-about {
+  width: 100%;
+  position: relative;
+}
+.container-to-about .parts {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 50px 50px 50px;
+  background: #fafafa;
+}
+.container-to-about .parts .ownerBg {
+  position: relative;
+  width: 45%;
+  height: auto;
+  padding: 20px;
+}
+
+.container-to-about .parts .ownerBg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+}
+.container-to-about .parts .details {
+  position: relative;
+  padding: 20px 50px;
+  margin: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 50%;
+}
+.container-to-about .parts .details .topper {
+  padding: 20px;
+}
+.container-to-about .parts .details .bottomer h1,
+.container-to-about .parts .details .topper h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.8rem;
+  font-weight: 800;
+  text-align: left;
+  font-style: normal;
+  line-height: 1.2em;
+  margin-top: 2.54em;
+  margin-bottom: 0.35em;
+  color: #502b21;
+}
+.container-to-about .parts .details .bottomer p,
+.container-to-about .parts .details .topper p {
+  text-align: justify;
+  font-family: "Montserrat", sans-serif;
+}
+.container-to-about .parts .details .bottomer {
+  padding: 20px;
+}
+.section .sec-banner {
+  width: 100%;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: #f6f1e8;
+  cursor: pointer;
+  height: 180px;
+  overflow: hidden;
+}
+.section .sec-banner .img-box-this {
+  width: 600px;
+  height: 310px;
+  position: relative;
+  border: 5px solid #fafafa;
+  transform: rotate(18deg);
+}
+
+.section .sec-banner .img-box-this img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+.section .awords {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 50px;
+  background-color: #f7a145 !important;
+}
+.section .awords .partitions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  cursor: pointer;
+  width: 250px;
+}
+.section .awords .partitions h1 {
+  color: #ffffff !important;
+  transition: all 0.2s ease-in-out;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.333rem;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.28em;
+  padding: 12px;
+}
+.section .awords .partitions p {
+  color: #fff;
+  text-align: center;
+}
+.section .awords .partitions i {
+  border-radius: 50%;
+  padding: 12px;
+  border: 3px solid #fff;
+  font-size: 40px;
+  color: #fff;
+  transition: all 0.2s ease-in-out;
+}
+.section .awords .partitions i:hover {
+  border: 3px solid #502b21;
+  color: #502b21 !important;
+}
+.section .awords .partitions h1:hover {
+  color: #502b21 !important;
+}
+@media (max-width: 576px) {
+  .container-to-about .parts {
+    flex-direction: column;
+  }
+  .container-to-about .parts .ownerBg {
+    width: 90%;
+  }
+  .container-to-about .parts .details {
+    width: 100%;
+  }
+  .section .sec-banner {
+    height: 100px;
+  }
+  .section .awords {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section .awords .partitions {
+    width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .container-to-about .parts {
+    flex-direction: column;
+  }
+  .container-to-about .parts .ownerBg {
+    width: 90%;
+  }
+  .container-to-about .parts .details {
+    width: 100%;
+  }
+  .section .sec-banner {
+    height: 100px;
+  }
+}
+@media (max-width: 992px) {
+  .container-to-about .parts {
+    flex-direction: column;
+  }
+  .container-to-about .parts .ownerBg {
+    width: 90%;
+  }
+  .container-to-about .parts .details {
+    width: 100%;
+  }
+  .section .sec-banner {
+    height: 100px;
+  }
+}
