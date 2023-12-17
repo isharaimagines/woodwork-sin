@@ -12,10 +12,10 @@ function App() {
     <div className="App">
       <Navbar />
       <Routes>
-        <Route path="woodwork-sin/home" element={<Home />} />
-        <Route path="woodwork-sin/service" element={<Service />} />
-        <Route path="woodwork-sin/about" element={<About />} />
-        <Route path="woodwork-sin/contactus" element={<Contactus />} />
+        <Route path="home" element={<Home />} />
+        <Route path="service" element={<Service />} />
+        <Route path="about" element={<About />} />
+        <Route path="contactus" element={<Contactus />} />
       </Routes>
       <Footer />
     </div>

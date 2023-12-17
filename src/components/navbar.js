@@ -23,16 +23,16 @@ function Navbar() {
           <i className={`ri-close-fill ${isVisible ? "" : "hidden"}`}></i>
         </div>
         <div className={`list ${isVisible ? "" : "visible"}`}>
-          <NavLink to="/woodwork-sin/home" className="expandHome">
+          <NavLink to="/home" className="expandHome">
             HOME
           </NavLink>
-          <NavLink to="/woodwork-sin/service" className="expandHome">
+          <NavLink to="/service" className="expandHome">
             SERVICES
           </NavLink>
-          <NavLink to="/woodwork-sin/about" className="expandHome">
+          <NavLink to="/about" className="expandHome">
             ABOUT
           </NavLink>
-          <NavLink to="/woodwork-sin/contactus" className="expandHome">
+          <NavLink to="/contactus" className="expandHome">
             CONTACT US
           </NavLink>
         </div>
