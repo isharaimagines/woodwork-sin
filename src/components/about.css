@@ -69,10 +69,9 @@
 }
 .section .sec-banner .img-box-this {
   width: 600px;
-  height: 310px;
+  height: 250px;
   position: relative;
-  border: 5px solid #fafafa;
-  transform: rotate(18deg);
+  border: 2.5px solid #fafafa;
 }
 
 .section .sec-banner .img-box-this img {

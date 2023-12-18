@@ -113,7 +113,7 @@ export const About = () => {
             <h1>Where to Buy</h1>
             <sup>Please call or email to order!</sup>
           </div>
-          <button onClick={() => navigate("contactus")}>CONTACT US</button>
+          <button onClick={() => navigate("/contactus")}>CONTACT US</button>
         </div>
       </div>
     </>

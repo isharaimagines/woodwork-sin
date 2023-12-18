@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
+
+.c-container {
+  width: 100%;
+  height: 110vh;
+  position: relative;
+  overflow: hidden;
+}
+.c-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  animation: bgblur 10s infinite ease-in-out;
+}
+@keyframes bgblur {
+  0% {
+    filter: blur(0px);
+  }
+  50% {
+    filter: blur(5px);
+  }
+  100% {
+    filter: blur(0px);
+  }
+}
+
+.c-container .c-text {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: 100;
+  top: 50%;
+  left: 5%;
+  background: rgba(34, 34, 34, 0.6);
+  padding: 20px;
+}
+.c-container .c-text h1 {
+  text-align: center;
+  color: #ffffff;
+  font-size: 4em;
+  line-height: 1.1em;
+  letter-spacing: 1px;
+  font-family: "Righteous", sans-serif;
+}
+.c-container .c-text h3 {
+  font-family: "Righteous", sans-serif;
+  color: #ffffff;
+  letter-spacing: 2px;
+}
+.section .cu-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 50px 50px 50px;
+  background: #fafafa;
+  cursor: pointer;
+}
+.section .cu-content h1 {
+  padding: 30px;
+  font-family: "Futura PT Light";
+}
+.section .cu-content h2 {
+  font-family: "Futura PT Light";
+  padding: 5px;
+}
+.section .cu-noticed {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px 100px 50px 100px;
+  background: #fafafa;
+  cursor: pointer;
+}
+.section .cu-noticed p {
+  font-family: "Futura PT Light";
+  padding: 5px;
+  font-size: 18px;
+  text-align: left;
+}
+.section .cu-noticed h1 {
+  font-family: "Futura PT Light";
+  padding: 50px 0 50px 0;
+}
+.section .cu-noticed .cu-row .cu-col h2 {
+  font-family: "Futura PT Light";
+  padding: 50px 0 50px 0;
+}
+.section .cu-noticed .cu-row {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.section .cu-noticed .cu-row .cu-col {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/*--------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Inter", sans-serif;
+}
+.formbold-mb-3 {
+  margin-bottom: 15px;
+}
+
+.formbold-main-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+.formbold-form-wrapper {
+  margin: 0 auto;
+  max-width: 570px;
+  width: 100%;
+  background: white;
+  padding: 40px;
+}
+
+.formbold-img {
+  display: block;
+  margin: 0 auto 45px;
+}
+
+.formbold-input-wrapp > div {
+  display: flex;
+  gap: 20px;
+}
+
+.formbold-input-flex {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+.formbold-input-flex > div {
+  width: 50%;
+}
+.formbold-form-input {
+  width: 100%;
+  padding: 13px 22px;
+  border-radius: 5px;
+  border: 1px solid #dde3ec;
+  background: #ffffff;
+  font-weight: 500;
+  font-size: 16px;
+  color: #536387;
+  outline: none;
+  resize: none;
+}
+.formbold-form-input::placeholder,
+select.formbold-form-input,
+.formbold-form-input[type="date"]::-webkit-datetime-edit-text,
+.formbold-form-input[type="date"]::-webkit-datetime-edit-month-field,
+.formbold-form-input[type="date"]::-webkit-datetime-edit-day-field,
+.formbold-form-input[type="date"]::-webkit-datetime-edit-year-field {
+  color: rgba(83, 99, 135, 0.5);
+}
+
+.formbold-form-input:focus {
+  border-color: #6a64f1;
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+.formbold-form-label {
+  color: #07074d;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.formbold-form-file-flex {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+.formbold-form-file-flex .formbold-form-label {
+  margin-bottom: 0;
+}
+.formbold-form-file {
+  font-size: 14px;
+  line-height: 24px;
+  color: #536387;
+}
+.formbold-form-file::-webkit-file-upload-button {
+  display: none;
+}
+.formbold-form-file:before {
+  content: "Upload file";
+  display: inline-block;
+  background: #eeeeee;
+  border: 0.5px solid #fbfbfb;
+  box-shadow: inset 0px 0px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 3px;
+  padding: 3px 12px;
+  outline: none;
+  white-space: nowrap;
+  cursor: pointer;
+  color: #637381;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  margin-right: 10px;
+}
+
+.formbold-btn {
+  text-align: center;
+  width: 100%;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 14px 25px;
+  border: none;
+  font-weight: 500;
+  background-color: #6a64f1;
+  color: white;
+  cursor: pointer;
+  margin-top: 25px;
+}
+.formbold-btn:hover {
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
+}
+
+.formbold-w-45 {
+  width: 45%;
+}

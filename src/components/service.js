@@ -46,11 +46,11 @@ export const Service = () => {
           <div className="cat-left">
             <h1>Locally handcrafted pieces</h1>
             <p>
-              All our cabinets and furniture are handmade by our talented
-              craftsmen in our Brooklyn studio, and designed to meet your needs
-              long after we have left. Our clients value the precision and care
-              with which we make all our pieces. Every effort is made to use
-              sustainably-sourced wood.
+              All our furniture or any woodworks are handmade by our talented
+              craftsmen in our <b>Siriwardhana Woodwork</b> studio, and designed
+              to meet your needs long after we have left. Our clients value the
+              precision and care with which we make all our pieces. Every effort
+              is made to use sustainably-sourced wood.
             </p>
           </div>
         </div>
