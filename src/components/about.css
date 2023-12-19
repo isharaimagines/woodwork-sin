@@ -1,3 +1,7 @@
+:root {
+  --font-in-text: "Noto Sans Sinhala", sans-serif;
+}
+
 .container-to-about {
   width: 100%;
   position: relative;
@@ -7,7 +11,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 100px 50px 50px 50px;
+  padding: 0px 50px 50px 50px;
   background: #fafafa;
 }
 .container-to-about .parts .ownerBg {
@@ -15,6 +19,7 @@
   width: 45%;
   height: auto;
   padding: 20px;
+  padding-top: 100px;
 }
 
 .container-to-about .parts .ownerBg img {
@@ -25,8 +30,6 @@
 }
 .container-to-about .parts .details {
   position: relative;
-  padding: 20px 50px;
-  margin: 20px 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -38,7 +41,7 @@
 }
 .container-to-about .parts .details .bottomer h1,
 .container-to-about .parts .details .topper h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-in-text);
   font-size: 2.8rem;
   font-weight: 800;
   text-align: left;
@@ -51,7 +54,7 @@
 .container-to-about .parts .details .bottomer p,
 .container-to-about .parts .details .topper p {
   text-align: justify;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-in-text);
 }
 .container-to-about .parts .details .bottomer {
   padding: 20px;
@@ -98,7 +101,7 @@
 .section .awords .partitions h1 {
   color: #ffffff !important;
   transition: all 0.2s ease-in-out;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-in-text);
   font-size: 1.333rem;
   font-weight: 700;
   font-style: normal;
@@ -108,12 +111,13 @@
 .section .awords .partitions p {
   color: #fff;
   text-align: center;
+  font-family: var(--font-in-text);
 }
 .section .awords .partitions i {
-  border-radius: 50%;
-  padding: 12px;
+  border-radius: 60px;
+  padding: 10px;
   border: 3px solid #fff;
-  font-size: 40px;
+  font-size: 25px;
   color: #fff;
   transition: all 0.2s ease-in-out;
 }

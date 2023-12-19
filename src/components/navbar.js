@@ -24,16 +24,16 @@ function Navbar() {
         </div>
         <div className={`list ${isVisible ? "" : "visible"}`}>
           <NavLink to="/" className="expandHome">
-            HOME
+            මුල් පිටුව
           </NavLink>
           <NavLink to="/service" className="expandHome">
-            SERVICES
+            සේවාවන්
           </NavLink>
           <NavLink to="/about" className="expandHome">
-            ABOUT
+            අපි ගැන
           </NavLink>
           <NavLink to="/contactus" className="expandHome">
-            CONTACT US
+            අපිව අමතන්න
           </NavLink>
         </div>
       </div>

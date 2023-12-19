@@ -40,11 +40,9 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
-    "Liberation Mono", "Courier New", monospace;
+
+  --font-in-text: "Noto Sans Sinhala", sans-serif;
+
   --bs-gradient: linear-gradient(
     180deg,
     rgba(255, 255, 255, 0.15),
@@ -105,7 +103,7 @@
   font-size: 4em;
   line-height: 1.1em;
   letter-spacing: 1px;
-  font-family: "Righteous", sans-serif;
+  font-family: var(--font-in-text);
 }
 .section .category {
   display: flex;
@@ -127,7 +125,7 @@
   letter-spacing: 1px;
   text-transform: none;
   line-height: 1.3em;
-  font-family: "Futura PT Light";
+  font-family: var(--font-in-text);
 }
 .section .category .cat-left p {
   font-weight: 300;
@@ -137,10 +135,10 @@
   line-height: 1.6em;
   color: #000;
   text-align: justify;
-  font-family: "Futura PT Light";
+  font-family: var(--font-in-text);
 }
 .section .category .cat-left p b {
-  font-family: "Futura PT Light";
+  font-family: var(--font-in-text);
 }
 .section .category .cat-right {
   margin: 20px;
@@ -184,7 +182,7 @@
   font-size: 45px;
   font-weight: 600;
 
-  font-family: "Futura PT Light";
+  font-family: var(--font-in-text);
 }
 .section .container-card .row .col-lg-2 {
   display: flex;
@@ -237,7 +235,7 @@
   font-size: var(--custom-link-font-size);
   font-weight: 600;
   padding: 3px 10px;
-  font-family: "Futura PT Light";
+  font-family: var(--font-in-text);
 }
 .section .container-card .row .col-lg-2 .product-thumb .product-info {
   width: 100%;
@@ -256,13 +254,13 @@
   font-size: 24px;
   font-weight: 800;
   padding: 10px 0px 10px 0px;
-  font-family: "Futura PT Light";
+  font-family: var(--font-in-text);
   letter-spacing: 1.5px;
 }
 .section .container-card .row .col-lg-2 .product-thumb .product-info .align p {
   font-size: 14px;
   color: #6c757d;
-  font-family: "Futura PT Light";
+  font-family: var(--font-in-text);
   letter-spacing: 1.5px;
 }
 .section

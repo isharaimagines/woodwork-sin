@@ -13,22 +13,25 @@ export const Service = () => {
         <img src={second} alt="banner" />
 
         <div className="s-text">
-          <h1>Extracting Hidden Potential</h1>
-          <h1> is our passion</h1>
+          <h1>සැඟවුණු විභවයන් හදුන්වදීම</h1>
+          <h1>අපගේ උනන්දුවයි</h1>
         </div>
       </div>
       <div className="section">
         <div className="category">
           <div className="cat-left">
-            <h1>Custom design, created with the present and future in mind</h1>
+            <h1>
+              පාරිභෝගික නිර්මාණ, වර්තමානය සහ අනාගතය ගැලපෙන ලෙස නිර්මාණය කර ඇත
+            </h1>
             <p>
-              The relationships we build with our clients reflect our dedication
-              to providing outstanding design and customer service. Prior to
-              creating design solutions just for you, we first listen to you to
-              learn what kind of outcomes you hope to achieve from our
-              partnership. We work hard to find and unlock hidden potential,
-              strike the right balance between style and utility, and design
-              fresh, contemporary spaces that are enjoyable to live in.{" "}
+              අපගේ ගනුදෙනුකරුවන් සමඟ අප ගොඩනඟන සබඳතා කැපී පෙනෙන නිර්මාණ සහ
+              පාරිභෝගික සේවා සැපයීම සඳහා අපගේ කැපවීම පිළිබිඹු කරයි. ඔබ වෙනුවෙන්ම
+              නිර්මාණ නිර්මාණය කිරීමට පෙර, අපගේ හවුල්කාරිත්වයෙන් ඔබ අපේක්ෂා කරන
+              ප්‍රතිඵල මොනවාදැයි දැන ගැනීමට අපි මුලින්ම ඔබට සවන් දෙන්නෙමු.
+              සැඟවුණු විභවයන් සොයා ගැනීමට සහ අද්විතීය, විලාසිතාව සහ උපයෝගීතාව
+              අතර නිවැරදි සමතුලිතතාවයක් ඇති කිරීමට සහ ජීවත් වීමට ප්‍රියජනක
+              නැවුම්, සමකාලීන අවකාශයන් සැලසුම් කිරීමට අපි වෙහෙස මහන්සි වී වැඩ
+              කරමු.
             </p>
           </div>
           <div className="cat-right">
@@ -44,13 +47,14 @@ export const Service = () => {
           </div>
 
           <div className="cat-left">
-            <h1>Locally handcrafted pieces</h1>
+            <h1>දේශීය දැතින් සාදන ලද දැව </h1>
             <p>
-              All our furniture or any woodworks are handmade by our talented
-              craftsmen in our <b>Siriwardhana Woodwork</b> studio, and designed
-              to meet your needs long after we have left. Our clients value the
-              precision and care with which we make all our pieces. Every effort
-              is made to use sustainably-sourced wood.
+              අපගේ සියලුම ගෘහ භාණ්ඩ හෝ ඕනෑම ලී වැඩ අපගේ <b>සිරිවර්ධන ලී වැඩ</b>{" "}
+              ස්ථානයේ සිටින අපගේ දක්ෂ ශිල්පීන් විසින් අතින් සැදිම හෝ පැමිණ සිදු
+              කර දෙනු ලැබේ, අප සේවාව සපයා පිටත්ව ගොස් බොහෝ කලකට පසුවත් ඔබගේ
+              අවශ්‍යතා සපුරාලීම සඳහා නිර්මාණය අද්විතීයය. අපගේ සේවාදායකයින් අප
+              සාදන සියලුම කොටස් වල නිරවද්‍යතාවය සහ සැලකිල්ල අගය කරයි. තිරසාර ලෙස
+              දැව භාවිතා කිරීමට සෑම උත්සාහයක්ම ගනු ලැබේ.
             </p>
           </div>
         </div>
@@ -189,10 +193,10 @@ export const Service = () => {
       <div className="section">
         <div className="secBox">
           <div className="name">
-            <h1>Where to Buy</h1>
-            <sup>Please call or email to order!</sup>
+            <h1>කොහොමද මිලදී ගන්නේ</h1>
+            <sup>ඇණවුම් කිරීමට කරුණාකර අමතන්න හෝ email පණිවිඩයක් එවන්න!</sup>
           </div>
-          <button onClick={() => navigate("/contactus")}>CONTACT US</button>
+          <button onClick={() => navigate("/contactus")}>අපිව අමතන්න</button>
         </div>
       </div>
     </>

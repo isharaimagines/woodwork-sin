@@ -5,8 +5,8 @@
   --black-color: #0d0e12;
   --reflection-color: rgba(246, 245, 238, 0.3);
   --body-color: #fffdf5;
-  --body-font: "Montserrat", sans-serif;
   --normal-font-size: 1rem;
+  --font-in-text: "Noto Sans Sinhala", sans-serif;
 }
 
 * {
@@ -87,8 +87,9 @@ body {
   text-decoration: none;
   transition: all 0.5s ease-in-out;
   justify-content: center;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--font-in-text);
   font-weight: 700;
+  border: 2px solid rgba(255, 255, 255, 0);
 }
 .navbar a:last-child {
   border: 2px solid white;

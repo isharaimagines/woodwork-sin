@@ -29,27 +29,27 @@ export const Footer = () => {
           <div className="social">
             <div className="social-icon">
               <a href="https://www.linkedin.com/in/ishara-siriwardhana-5b1732274/">
-                <i class="ri-linkedin-box-fill"></i>
+                <i className="ri-linkedin-box-fill"></i>
               </a>
               <a href="https://github.com/ishararaviget9/">
-                <i class="ri-github-fill"></i>
+                <i className="ri-github-fill"></i>
               </a>
               <a href="mailto:studymotivat01@gmail.com">
-                <i class="ri-mail-send-fill"></i>
+                <i className="ri-mail-send-fill"></i>
               </a>
               <a href="https://discord.gg/ZCyEMb9y">
-                <i class="ri-discord-fill"></i>
+                <i className="ri-discord-fill"></i>
               </a>
             </div>
             <div className="social-icon">
               <a href="https://t.me/DroidImaginalytic">
-                <i class="ri-telegram-fill"></i>
+                <i className="ri-telegram-fill"></i>
               </a>
               <a href="https://ishararaviget9.github.io/myprofile/">
-                <i class="ri-instagram-line"></i>
+                <i className="ri-instagram-line"></i>
               </a>
               <a href="https://ishararaviget9.github.io/myprofile/">
-                <i class="ri-youtube-fill"></i>
+                <i className="ri-youtube-fill"></i>
               </a>
             </div>
             <p>

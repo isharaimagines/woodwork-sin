@@ -39,27 +39,24 @@ export const About = () => {
           </div>
           <div className="details">
             <div className="topper">
-              <h1>Who I am</h1>
+              <h1>මම කව්ද</h1>
               <p>
-                My interest in woodworking began over 20 years ago from the need
-                for a simple bookcase. And while that first effort was
-                succcessful, it sparked a desire learn more about woodworking
-                tools and techniques. Guided by teachers at a local wood working
-                supply store, Woodcraft of Dallas, and later at Homestead
-                Heritage School of Woodworking, I took classes that helped me
-                expand my skills and knowledge.
+                ලී වැඩ පිළිබඳ මගේ උනන්දුව ආරම්භ වූයේ වසර 31 කට පෙර සරල පොත්
+                පෙට්ටියක අවශ්‍යතාවයෙන්. එම පළමු උත්සාහය සාර්ථක වූ අතර, එය ලී වැඩ
+                කිරීමේ මෙවලම් සහ ශිල්පීය ක්‍රම ගැන වැඩිදුර ඉගෙන ගැනීමට ආශාවක්
+                ඇති කළේය. දේශීය දැව වැඩ කරන සැපයුම් වෙළඳසැලක සහ පසුව Sri Lanka
+                School of Woodworking හි ගුරුවරුන් විසින් මඟ පෙන්වනු ලැබූ අතර,
+                මම මගේ කුසලතා සහ දැනුම පුළුල් කිරීමට උපකාර කළ පන්ති පැවැත්වුවා.
               </p>
             </div>
             <div className="bottomer">
-              <h1>What I do</h1>
+              <h1>මම කුමක් ද කරන්නේ</h1>
               <p>
-                Today I produce a wide variety of wood products, including
-                tables, desks, bookcases, jewelry boxes, presentation wine
-                boxes, and many more. I use only renewable (non-endangered
-                species) woods, both domestic and tropical, to produce heirloom
-                quality furniture. While cheap furniture can be found in many
-                stores, such items will last only a few years; my furniture will
-                last for generations, provided that it is cared for properly.
+                අද මම දැව නිෂ්පාදන රාශියක් නිෂ්පාදනය කරමි මේස, රාක්ක , පුටු,
+                රාමු, සිවිලිම්, ජනෙල, ඇදන්, වහල, සහ තවත් බොහෝ දේ. මම භාවිතා
+                කරන්නේ නිවැරදි ශිල්ප ක්‍රම නිසා ගෘහස්ථ හා පිටත යන දෙඅංශයෙන්ම දැව
+                ගුණාත්මක ගෘහ භාණ්ඩ වේ. එවැනි දැව භාණ්ඩ පරම්පරා කිහිපයක් පමණක්ම
+                පවතිනු ඇත.
               </p>
             </div>
           </div>
@@ -71,36 +68,35 @@ export const About = () => {
       <div className="section">
         <div className="awords">
           <div className="partitions">
-            <i class="ri-pencil-ruler-2-fill"></i>
-            <h1>Equipment</h1>
+            <i className="ri-pencil-ruler-2-fill"></i>
+            <h1>උපකරණ</h1>
             <p>
-              I keep up-to-date on the latest equipment, wishing to provide the
-              highest level of quality in my products.
+              මම මගේ නිෂ්පාදනවල ඉහළම ගුණාත්මක භාවය සැපයීමට බලාපොරොත්තු වන නවතම
+              උපකරණ පිළිබඳව යාවත්කාලීනව සිටිමි.
             </p>
           </div>
           <div className="partitions">
-            <i class="ri-tools-fill"></i>
-            <h1>Original Projects</h1>
+            <i className="ri-tools-fill"></i>
+            <h1>නව්‍ය වියපෘති</h1>
             <p>
-              I love to hear your ideas! Let me know what you are wanting, and
-              we can work together to make it happen!
+              මම ඔබේ අදහස් ඇසීමට කැමතියි! ඔබට අවශ්‍ය දේ මට දන්වන්න, එය සිදු
+              කිරීමට අපට එකට වැඩ කළ හැක!
             </p>
           </div>
           <div className="partitions">
-            <i class="ri-thumb-up-fill"></i>
-            <h1>Quality Products</h1>
+            <i className="ri-thumb-up-fill"></i>
+            <h1>ගුණාත්මක නිෂ්පාදන</h1>
             <p>
-              As I create each product, I research the best wood to use
-              depending on its strength and its beauty.{" "}
+              මම සෑම නිෂ්පාදනයක්ම නිර්මාණය කරන විට, එහි ශක්තිය සහ එහි අලංකාරය මත
+              භාවිතා කිරීමට හොඳම දැව මම පරික්ෂා කරමි.
             </p>
           </div>
           <div className="partitions">
-            <i class="ri-flask-fill"></i>
-            <h1>Training</h1>
+            <i className="ri-flask-fill"></i>
+            <h1>පළපුරුද්ද</h1>
             <p>
-              Guided by teachers at a local wood working supply store, Woodcraft
-              of Dallas, and later at Homestead Heritage School of Woodworking,
-              I took classes that helped me expand my skills and knowledge.
+              වසර 30ට වැඩි අත්දැකීම සමගින් ඔබට හොදම ගැලපෙන දේ ලබා දීම සහතික කල
+              හැක.
             </p>
           </div>
         </div>
@@ -110,10 +106,10 @@ export const About = () => {
       <div className="section">
         <div className="secBox">
           <div className="name">
-            <h1>Where to Buy</h1>
-            <sup>Please call or email to order!</sup>
+            <h1>කොහොමද මිලදී ගන්නේ</h1>
+            <sup>ඇණවුම් කිරීමට කරුණාකර අමතන්න හෝ email පණිවිඩයක් එවන්න!</sup>
           </div>
-          <button onClick={() => navigate("/contactus")}>CONTACT US</button>
+          <button onClick={() => navigate("/contactus")}>අපිව අමතන්න</button>
         </div>
       </div>
     </>

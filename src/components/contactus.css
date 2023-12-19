@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Righteous&display=swap");
-
+:root {
+  --font-in-text: "Noto Sans Sinhala", sans-serif;
+}
 .c-container {
   width: 100%;
   height: 110vh;
@@ -42,11 +43,12 @@
   font-size: 4em;
   line-height: 1.1em;
   letter-spacing: 1px;
-  font-family: "Righteous", sans-serif;
+  font-family: var(--font-in-text);
 }
 .c-container .c-text h3 {
-  font-family: "Righteous", sans-serif;
+  font-family: var(--font-in-text);
   color: #ffffff;
+  padding-top: 10px;
   letter-spacing: 2px;
 }
 .section .cu-content {
@@ -61,10 +63,10 @@
 }
 .section .cu-content h1 {
   padding: 30px;
-  font-family: "Futura PT Light";
+  font-family: var(--font-in-text);
 }
 .section .cu-content h2 {
-  font-family: "Futura PT Light";
+  font-family: var(--font-in-text);
   padding: 5px;
 }
 .section .cu-noticed {
@@ -78,17 +80,17 @@
   cursor: pointer;
 }
 .section .cu-noticed p {
-  font-family: "Futura PT Light";
+  font-family: var(--font-in-text);
   padding: 5px;
   font-size: 18px;
   text-align: left;
 }
 .section .cu-noticed h1 {
-  font-family: "Futura PT Light";
+  font-family: var(--font-in-text);
   padding: 50px 0 50px 0;
 }
 .section .cu-noticed .cu-row .cu-col h2 {
-  font-family: "Futura PT Light";
+  font-family: var(--font-in-text);
   padding: 50px 0 50px 0;
 }
 .section .cu-noticed .cu-row {
@@ -105,17 +107,32 @@
   align-items: flex-start;
   justify-content: flex-start;
 }
-
+@media (max-width: 576px) {
+  .section .cu-noticed .cu-row {
+    flex-direction: column;
+  }
+  .section .cu-noticed .cu-row .cu-col {
+    width: 98%;
+  }
+}
+@media (max-width: 768px) {
+  .section .cu-noticed .cu-row {
+    flex-direction: column;
+  }
+  .section .cu-noticed .cu-row .cu-col {
+    width: 98%;
+  }
+}
+@media (max-width: 992px) {
+  .section .cu-noticed .cu-row {
+    flex-direction: column;
+  }
+  .section .cu-noticed .cu-row .cu-col {
+    width: 98%;
+  }
+}
 /*--------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: "Inter", sans-serif;
-}
+
 .formbold-mb-3 {
   margin-bottom: 15px;
 }

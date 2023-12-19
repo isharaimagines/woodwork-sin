@@ -8,86 +8,83 @@ export const Contactus = () => {
         <img src={wallbg} alt="c-banner" />
 
         <div className="c-text">
-          <h1> For the Services We Can Provide For You</h1>
-          <h3>Contact Us</h3>
+          <h1> අපට ඔබ වෙනුවෙන් සැපයිය හැකි සේවාවන් සඳහා</h1>
+          <h3>අපව අමතන්න</h3>
         </div>
       </div>
 
       <div className="section">
         <div className="cu-content">
-          <h1>Request a free estimate.</h1>
-          <h2>Phone: +94771234567</h2>
-          <h2>Or email: example@gmail.com</h2>
+          <h1>නොමිලේ ඇස්තමේන්තුවක් ඉල්ලන්න.</h1>
+          <h2>දුරකතන අංකය: (+94) 771234567</h2>
+          <h2>හෝ ඊමේල් කරන්න: example@gmail.com</h2>
         </div>
         <div className="cu-noticed">
           <p>
-            Please include an overall description of the project, your location,
-            approximate dimensions, and any material or finishing preferences
-            you may have.
+            කරුණාකර ව්‍යාපෘතියේ සමස්ත විස්තරයක්, ඔබේ ස්ථානය, ආසන්න පරිමාණයක් සහ
+            භාණ්ඩය සැදිමට අවශ්‍ය ද්‍රව්‍ය හෝ නිම කිරීමේ මනාප ඇතුළත් කරන්න.
           </p>
           <p>
-            When we receive the details about your requirement, we will start
-            our processing. After that, you will get a complete description of
-            our process. Then we can talk about the task over a phone call.
+            ඔබගේ අවශ්‍යතාවය පිළිබඳ විස්තර අපට ලැබුණු පසු, අපි අපගේ සැකසීම ආරම්භ
+            කරන්නෙමු. ඊට පසු, අපගේ ක්රියාවලිය පිළිබඳ සම්පූර්ණ විස්තරයක් ඔබට
+            ලැබෙනු ඇත. එවිට අපට දුරකථන ඇමතුමකින් කාර්යය ගැන කතා කළ හැකිය.
           </p>
-          <p>We look forward to hearing from you!</p>
+          <p>අපි ඔබගෙ පණිවිඩ බලාපොරොත්තු වෙන් !</p>
         </div>
       </div>
       <hr />
       <div className="section">
         <div className="cu-noticed">
-          <h1>What to expect:</h1>
+          <h1>අපේක්ෂා කළ යුතු දේ:</h1>
           <div className="cu-row">
             <div className="cu-col">
-              <h2>1. Initial Consultation</h2>
+              <h2>1. මූලික උපදේශනය</h2>
               <p>
-                We offer a no-charge consultation to discuss your project and
-                provide a price estimate under no obligation. We invite you to
-                take advantage of our years of experience to explore the
-                possibilities for your space.{" "}
+                ඔබගේ ව්‍යාපෘතිය සාකච්ඡා කිරීමට සහ වගකීමක් යටතේ මිල ඇස්තමේන්තුවක්
+                සැපයීමට අපි ගාස්තු රහිත උපදේශනයක් පිරිනමමු. ඔබගේ අදහස් ගවේෂණය
+                කිරීම සඳහා අපගේ වසර ගණනාවක අත්දැකීම් ප්‍රයෝජනයට ගන්නා ලෙස අපි
+                ඔබට ආරාධනා කරන්නෙමු.
               </p>
 
-              <h2>2. Custom Design</h2>
+              <h2>2. පාරිභෝගික නිර්මාණය</h2>
               <p>
-                Once we have all the necessary information, we can provide a
-                formal proposal with detailed costs and a timetable. If you are
-                ready to move ahead with the project, we request 10% of the
-                payment to lock a slot in our calendar. We then schedule a
-                follow-up to set about creating your unique design and discuss
-                the particulars of your project.
+                අපට අවශ්‍ය සියලු තොරතුරු ලැබුණු පසු, සවිස්තරාත්මක වියදම් සහ
+                කාලසටහනක් සහිත විධිමත් යෝජනාවක් අපට සැපයිය හැකිය. ඔබ ව්‍යාපෘතිය
+                සමඟ ඉදිරියට යාමට සූදානම් නම්, දිනයක් වෙන් කරගැනීමට අපි ගෙවීමෙන්
+                10%ක් ඉල්ලා සිටිමු. ඔබගේ අද්විතීය නිර්මාණ නිර්මාණය කිරීම සහ ඔබේ
+                ව්‍යාපෘතියේ විස්තර සාකච්ඡා කිරීම සඳහා අපි පසු විපරමක් සැලසුම්
+                කරමු.
               </p>
 
-              <h2>3. Build</h2>
+              <h2>3. ගොඩනැගිම </h2>
               <p>
-                We present 3D rendering drawings, photos, and/or sample
-                materials. When you are happy with the final design, we are
-                ready to build. Shortly before building begins, we require a 70%
-                payment towards the construction of your project, including
-                ordering materials. We craft your piece(s) in our Brooklyn
-                studio.
+                අවසාන සැලසුම ගැන ඔබ සතුටු වන විට, අපි ගොඩනැගීමට සූදානම්.
+                ගොඩනැගීම ආරම්භ කිරීමට ටික වේලාවකට පෙර, ඇණවුම් ද්‍රව්‍ය ඇතුළුව,
+                ඔබේ ව්‍යාපෘතියේ ඉදිකිරීම් සඳහා 70% ක ගෙවීමක් අපට අවශ්‍ය වේ. අපි
+                ඔබේ වැඩ කොටස අපගේ වැඩ සාප්පුව තුළ සකස් කරමු.
               </p>
 
-              <h2>4. Delivery & Installation </h2>
+              <h2>4. භාරදීම සහ ස්ථාපනය </h2>
               <p>
-                The majority of construction takes place in our studio; this
-                minimizes the amount of time for installations so that there is
-                as little disruption to your home as possible. All installation
-                is done by our own crafts people who are trained to ensure that
-                your project is installed precisely.{" "}
+                ඉදිකිරීම් වලින් බහුතරයක් අපගේ වැඩපල තුළ සිදු වේ; මෙය ස්ථාපනය
+                සඳහා ගතවන කාලය අවම කරයි, එවිට ඔබේ නිවසට හැකි තරම් කුඩා බාධා ඇති
+                වේ. ඔබගේ ව්‍යාපෘතිය නිශ්චිතවම ස්ථාපනය කර ඇති බව සහතික කිරීමට
+                පුහුණු වූ අපගේම අත්කම් නිර්මාණකරුවන් විසින් සියලුම ස්ථාපනය සිදු
+                කරනු ලැබේ.
               </p>
 
               <p>
-                Throughout the process, we are available to answer any questions
-                you may have. Call us at (718) 722-1266 or email
-                info@urbanhomecraft.com if you have questions.
+                මෙම ක්‍රියාවලිය පුරාම, ඔබට ඇති ඕනෑම ප්‍රශ්නයකට පිළිතුරු දීමට අප
+                බැදී ඇත. ඔබට ප්‍රශ්න ඇත්නම් (+94) 771234567 හෝ info@gmail.com
+                වෙත විද්‍යුත් තැපෑලෙන් අප අමතන්න.
               </p>
             </div>
             <div className="cu-col">
-              <div class="formbold-main-wrapper">
-                <div class="formbold-form-wrapper">
+              <div className="formbold-main-wrapper">
+                <div className="formbold-form-wrapper">
                   <form action="" method="POST">
-                    <div class="formbold-input-wrapp formbold-mb-3">
-                      <label for="firstname" class="formbold-form-label">
+                    <div className="formbold-input-wrapp formbold-mb-3">
+                      <label for="firstname" className="formbold-form-label">
                         Name
                       </label>
 
@@ -97,7 +94,7 @@ export const Contactus = () => {
                           name="firstname"
                           id="firstname"
                           placeholder="First name"
-                          class="formbold-form-input"
+                          className="formbold-form-input"
                         />
 
                         <input
@@ -105,14 +102,14 @@ export const Contactus = () => {
                           name="lastname"
                           id="lastname"
                           placeholder="Last name"
-                          class="formbold-form-input"
+                          className="formbold-form-input"
                         />
                       </div>
                     </div>
 
-                    <div class="formbold-mb-3">
+                    <div className="formbold-mb-3">
                       <div>
-                        <label for="email" class="formbold-form-label">
+                        <label for="email" className="formbold-form-label">
                           Email
                         </label>
                         <input
@@ -120,13 +117,13 @@ export const Contactus = () => {
                           name="email"
                           id="email"
                           placeholder="example@email.com"
-                          class="formbold-form-input"
+                          className="formbold-form-input"
                         />
                       </div>
                     </div>
-                    <div class="formbold-mb-3">
+                    <div className="formbold-mb-3">
                       <div>
-                        <label for="phone" class="formbold-form-label">
+                        <label for="phone" className="formbold-form-label">
                           Phone
                         </label>
                         <input
@@ -134,13 +131,13 @@ export const Contactus = () => {
                           name="phone"
                           id="phone"
                           placeholder="Phone number"
-                          class="formbold-form-input"
+                          className="formbold-form-input"
                         />
                       </div>
                     </div>
 
-                    <div class="formbold-mb-3">
-                      <label for="address" class="formbold-form-label">
+                    <div className="formbold-mb-3">
+                      <label for="address" className="formbold-form-label">
                         Address
                       </label>
 
@@ -149,13 +146,13 @@ export const Contactus = () => {
                         name="address"
                         id="address"
                         placeholder="Current address"
-                        class="formbold-form-input formbold-mb-3"
+                        className="formbold-form-input formbold-mb-3"
                       />
                     </div>
 
-                    <div class="formbold-input-flex">
+                    <div className="formbold-input-flex">
                       <div>
-                        <label for="post" class="formbold-form-label">
+                        <label for="post" className="formbold-form-label">
                           Post/Zip code
                         </label>
                         <input
@@ -163,11 +160,11 @@ export const Contactus = () => {
                           name="post"
                           id="post"
                           placeholder="ex:8976"
-                          class="formbold-form-input"
+                          className="formbold-form-input"
                         />
                       </div>
                       <div>
-                        <label for="city" class="formbold-form-label">
+                        <label for="city" className="formbold-form-label">
                           City
                         </label>
                         <input
@@ -175,12 +172,12 @@ export const Contactus = () => {
                           name="city"
                           id="city"
                           placeholder="ex: New York"
-                          class="formbold-form-input"
+                          className="formbold-form-input"
                         />
                       </div>
                     </div>
-                    <div class="formbold-mb-3">
-                      <label for="message" class="formbold-form-label">
+                    <div className="formbold-mb-3">
+                      <label for="message" className="formbold-form-label">
                         Project Description
                       </label>
                       <textarea
@@ -188,11 +185,11 @@ export const Contactus = () => {
                         name="message"
                         id="message"
                         placeholder="Description"
-                        class="formbold-form-input"
+                        className="formbold-form-input"
                       ></textarea>
                     </div>
 
-                    <button class="formbold-btn">Send</button>
+                    <button className="formbold-btn">Send</button>
                   </form>
                 </div>
               </div>
