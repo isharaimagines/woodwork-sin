@@ -1,44 +1,86 @@
-import { NavLink } from "react-router-dom";
-import "./navbar.css";
-import React, { useState } from "react";
+import { useState, useEffect } from "react";
+import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from "../assets/img/woodLogo1.svg";
 
-function Navbar() {
-  const [isVisible, setIsVisible] = useState(true);
+export const Navbar = () => {
+  const [activeLink, setActiveLink] = useState("home");
+  const [scrolled, setScrolled] = useState(false);
 
-  const handleClick = () => {
-    setIsVisible(!isVisible);
+  useEffect(() => {
+    const onScroll = () => {
+      if (window.scrollY > 50) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", onScroll);
+
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const onUpdateActiveLink = (value) => {
+    setActiveLink(value);
   };
 
   return (
-    <nav className="navbar">
-      <div className="trapezoid">
-        <div className="logo-back">
-          <div className="logo">
-            <img src={logo} alt="logo" />
-          </div>
-        </div>
-        <div onClick={handleClick} className="menubar">
-          <i className={`ri-menu-line ${isVisible ? "" : "hidden"}`}></i>
-          <i className={`ri-close-fill ${isVisible ? "" : "hidden"}`}></i>
-        </div>
-        <div className={`list ${isVisible ? "" : "visible"}`}>
-          <NavLink to="/" className="expandHome">
-            මුල් පිටුව
-          </NavLink>
-          <NavLink to="/service" className="expandHome">
-            සේවාවන්
-          </NavLink>
-          <NavLink to="/about" className="expandHome">
-            අපි ගැන
-          </NavLink>
-          <NavLink to="/contactus" className="expandHome">
-            අපිව අමතන්න
-          </NavLink>
-        </div>
-      </div>
-    </nav>
+    <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
+      <Container>
+        <Navbar.Brand href="/">
+          <img src={logo} alt="Logo" />
+        </Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav">
+          <span className="navbar-toggler-icon"></span>
+        </Navbar.Toggle>
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto">
+            <Nav.Link
+              href="#home"
+              className={
+                activeLink === "home" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("home")}
+            >
+              HOME
+            </Nav.Link>
+            <Nav.Link
+              href="#profile"
+              className={
+                activeLink === "profile" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("profile")}
+            >
+              ABOUT ME
+            </Nav.Link>
+            <Nav.Link
+              href="#skills"
+              className={
+                activeLink === "skills" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("skills")}
+            >
+              SKILLS
+            </Nav.Link>
+            <Nav.Link
+              href="#projects"
+              className={
+                activeLink === "projects" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("projects")}
+            >
+              PROJECTS
+            </Nav.Link>
+          </Nav>
+          <span className="navbar-text">
+            <Nav.Link to="#connect">
+              <button className="vvd">
+                <span>Let’s Connect</span>
+              </button>
+            </Nav.Link>
+          </span>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
-}
-
-export default Navbar;
+};
