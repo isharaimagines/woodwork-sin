@@ -84,8 +84,11 @@ export const Contactus = () => {
                 <div className="formbold-form-wrapper">
                   <form action="" method="POST">
                     <div className="formbold-input-wrapp formbold-mb-3">
-                      <label for="firstname" className="formbold-form-label">
-                        Name
+                      <label
+                        htmlFor="firstname"
+                        className="formbold-form-label"
+                      >
+                        නම
                       </label>
 
                       <div>
@@ -93,7 +96,7 @@ export const Contactus = () => {
                           type="text"
                           name="firstname"
                           id="firstname"
-                          placeholder="First name"
+                          placeholder="First Name"
                           className="formbold-form-input"
                         />
 
@@ -101,7 +104,7 @@ export const Contactus = () => {
                           type="text"
                           name="lastname"
                           id="lastname"
-                          placeholder="Last name"
+                          placeholder="Last Name"
                           className="formbold-form-input"
                         />
                       </div>
@@ -109,8 +112,8 @@ export const Contactus = () => {
 
                     <div className="formbold-mb-3">
                       <div>
-                        <label for="email" className="formbold-form-label">
-                          Email
+                        <label htmlFor="email" className="formbold-form-label">
+                          ඊමේල් ලිපිනය
                         </label>
                         <input
                           type="email"
@@ -123,62 +126,62 @@ export const Contactus = () => {
                     </div>
                     <div className="formbold-mb-3">
                       <div>
-                        <label for="phone" className="formbold-form-label">
-                          Phone
+                        <label htmlFor="phone" className="formbold-form-label">
+                          දුරකථන අංකය
                         </label>
                         <input
                           type="text"
                           name="phone"
                           id="phone"
-                          placeholder="Phone number"
+                          placeholder="+94712345678"
                           className="formbold-form-input"
                         />
                       </div>
                     </div>
 
                     <div className="formbold-mb-3">
-                      <label for="address" className="formbold-form-label">
-                        Address
+                      <label htmlFor="address" className="formbold-form-label">
+                        ලිපිනය
                       </label>
 
                       <input
                         type="text"
                         name="address"
                         id="address"
-                        placeholder="Current address"
+                        placeholder="Address"
                         className="formbold-form-input formbold-mb-3"
                       />
                     </div>
 
                     <div className="formbold-input-flex">
                       <div>
-                        <label for="post" className="formbold-form-label">
-                          Post/Zip code
+                        <label htmlFor="post" className="formbold-form-label">
+                          තැපැල් කේතය
                         </label>
                         <input
                           type="text"
                           name="post"
                           id="post"
-                          placeholder="ex:8976"
+                          placeholder="ex: 89760"
                           className="formbold-form-input"
                         />
                       </div>
                       <div>
-                        <label for="city" className="formbold-form-label">
-                          City
+                        <label htmlFor="city" className="formbold-form-label">
+                          නගරය
                         </label>
                         <input
                           type="text"
                           name="city"
                           id="city"
-                          placeholder="ex: New York"
+                          placeholder="ex: Colombo"
                           className="formbold-form-input"
                         />
                       </div>
                     </div>
                     <div className="formbold-mb-3">
-                      <label for="message" className="formbold-form-label">
-                        Project Description
+                      <label htmlFor="message" className="formbold-form-label">
+                        සවිස්තරාත්මක පැහැදිලි කිරීමක්
                       </label>
                       <textarea
                         rows="6"
@@ -189,7 +192,7 @@ export const Contactus = () => {
                       ></textarea>
                     </div>
 
-                    <button className="formbold-btn">Send</button>
+                    <button className="formbold-btn">යොමු කරන්න</button>
                   </form>
                 </div>
               </div>
