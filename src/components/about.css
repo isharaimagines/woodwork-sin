@@ -164,6 +164,15 @@
   .section .sec-banner {
     height: 100px;
   }
+  .section .awords {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section .awords .partitions {
+    width: 100%;
+  }
 }
 @media (max-width: 992px) {
   .container-to-about .parts {
@@ -177,5 +186,14 @@
   }
   .section .sec-banner {
     height: 100px;
+  }
+  .section .awords {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .section .awords .partitions {
+    width: 100%;
   }
 }
