@@ -58,6 +58,7 @@
   font-family: var(--font-in-text);
 }
 .container .text h3 {
+  text-align: center;
   font-family: var(--font-in-text);
 }
 @keyframes zooms-text {
@@ -227,6 +228,15 @@
   .section .secBox button {
     margin: 20px;
   }
+  .container .text h1 {
+    text-align: left;
+  }
+  .container .text {
+    top: 20%;
+  }
+  .container .text h3 {
+    text-align: left;
+  }
 }
 @media (max-width: 768px) {
   .section .content {
@@ -245,6 +255,15 @@
   .section .secBox button {
     margin: 20px;
   }
+  .container .text h1 {
+    text-align: left;
+  }
+  .container .text {
+    top: 20%;
+  }
+  .container .text h3 {
+    text-align: left;
+  }
 }
 @media (max-width: 992px) {
   .section .content {
@@ -262,5 +281,14 @@
   }
   .section .secBox button {
     margin: 20px;
+  }
+  .container .text h1 {
+    text-align: left;
+  }
+  .container .text {
+    top: 25%;
+  }
+  .container .text h3 {
+    text-align: left;
   }
 }

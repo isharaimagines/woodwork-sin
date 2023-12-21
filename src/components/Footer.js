@@ -5,7 +5,7 @@ import logo from "../assets/img/my_logo.png";
 export const Footer = () => {
   return (
     <div className="footer">
-      <div className="containeres">
+      <div className="f_container">
         <div className="align-items-center">
           <div className="col">
             <img src={logo} alt="Logo" />
@@ -62,5 +62,3 @@ export const Footer = () => {
     </div>
   );
 };
-
-export default Footer;

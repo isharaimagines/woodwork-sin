@@ -1,10 +1,14 @@
-import { useState, useEffect } from "react";
-import { Navbar, Nav, Container } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import "./navbar.css";
+import React, { useState } from "react";
 import logo from "../assets/img/woodLogo1.svg";
+import { useEffect } from "react";
 
 export const Navbar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+
+  const [isListUnorderedClicked, setListUnorderedClicked] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -24,63 +28,82 @@ export const Navbar = () => {
     setActiveLink(value);
   };
 
+  const handleListUnorderedClick = () => {
+    setListUnorderedClicked(!isListUnorderedClicked);
+    // Add your logic here to handle the click event and add another class if needed
+  };
+
   return (
-    <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
-      <Container>
-        <Navbar.Brand href="/">
-          <img src={logo} alt="Logo" />
-        </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav">
-          <span className="navbar-toggler-icon"></span>
-        </Navbar.Toggle>
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link
-              href="#home"
+    <nav className={scrolled ? "scrolled" : "navbar"}>
+      <div className="nav-container">
+        <div className="nav-top-bar">
+          <a href="/" className="navbar-brand">
+            <img src={logo} alt="Logo" />
+          </a>
+          <button
+            aria-controls="basic-navbar-nav"
+            type="button"
+            aria-label="Toggle navigation"
+            className="navbar-toggler"
+            onClick={handleListUnorderedClick}
+          >
+            <i className="ri-list-unordered"></i>
+          </button>
+        </div>
+        <div
+          className={`navbar-collapse ${
+            isListUnorderedClicked ? "collosed-down" : ""
+          }`}
+          id="basic-navbar-nav"
+        >
+          <div
+            className={`navbar-nav ${
+              isListUnorderedClicked ? "collosed-down" : ""
+            }`}
+          >
+            <NavLink
+              to="/"
               className={
                 activeLink === "home" ? "active navbar-link" : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("home")}
             >
-              HOME
-            </Nav.Link>
-            <Nav.Link
-              href="#profile"
+              මුල් පිටුව
+            </NavLink>
+            <NavLink
+              to="/service"
               className={
                 activeLink === "profile" ? "active navbar-link" : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("profile")}
             >
-              ABOUT ME
-            </Nav.Link>
-            <Nav.Link
-              href="#skills"
+              සේවාවන්
+            </NavLink>
+            <NavLink
+              to="/about"
               className={
                 activeLink === "skills" ? "active navbar-link" : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("skills")}
             >
-              SKILLS
-            </Nav.Link>
-            <Nav.Link
-              href="#projects"
+              අපි ගැන
+            </NavLink>
+          </div>
+          <span className="navbar-text">
+            <NavLink
+              to="/contactus"
               className={
                 activeLink === "projects" ? "active navbar-link" : "navbar-link"
               }
               onClick={() => onUpdateActiveLink("projects")}
             >
-              PROJECTS
-            </Nav.Link>
-          </Nav>
-          <span className="navbar-text">
-            <Nav.Link to="#connect">
               <button className="vvd">
-                <span>Let’s Connect</span>
+                <span>අපිව අමතන්න</span>
               </button>
-            </Nav.Link>
+            </NavLink>
           </span>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+        </div>
+      </div>
+    </nav>
   );
 };
