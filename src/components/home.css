@@ -211,7 +211,10 @@
 .section .secBox button:hover {
   background: #f7a145;
 }
-@media (max-width: 576px) {
+
+@media (max-width: 768px) and (min-width: 577px),
+  (max-width: 992px) and (min-width: 769px),
+  (max-width: 576px) {
   .section .content {
     flex-direction: column;
   }
@@ -232,63 +235,18 @@
     text-align: left;
   }
   .container .text {
-    top: 20%;
+    top: 16%;
   }
   .container .text h3 {
     text-align: left;
   }
-}
-@media (max-width: 768px) {
-  .section .content {
-    flex-direction: column;
+  .section .content .left h1 {
+    padding: 50px 25px 25px 25px;
   }
-  .section .content .left {
-    width: 99%;
-  }
-  .section .content .right {
-    width: 99%;
-  }
-  .section .secBox {
-    padding: 50px;
-    flex-direction: column;
-  }
-  .section .secBox button {
-    margin: 20px;
+  .section .content .left p {
+    padding: 50px 25px 25px 25px;
   }
   .container .text h1 {
-    text-align: left;
-  }
-  .container .text {
-    top: 20%;
-  }
-  .container .text h3 {
-    text-align: left;
-  }
-}
-@media (max-width: 992px) {
-  .section .content {
-    flex-direction: column;
-  }
-  .section .content .left {
-    width: 99%;
-  }
-  .section .content .right {
-    width: 99%;
-  }
-  .section .secBox {
-    padding: 50px;
-    flex-direction: column;
-  }
-  .section .secBox button {
-    margin: 20px;
-  }
-  .container .text h1 {
-    text-align: left;
-  }
-  .container .text {
-    top: 25%;
-  }
-  .container .text h3 {
-    text-align: left;
+    font-size: 3em;
   }
 }
