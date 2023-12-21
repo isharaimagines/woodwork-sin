@@ -41,7 +41,7 @@ export const Service = () => {
       </div>
 
       <div className="section">
-        <div className="category">
+        <div className="category design">
           <div className="cat-right nd">
             <img src={desing_2Img} alt="cat-imge" />
           </div>

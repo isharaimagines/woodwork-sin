@@ -221,6 +221,9 @@
   .section .category {
     flex-direction: column;
   }
+  .section .category.design {
+    flex-direction: column-reverse;
+  }
   .section .container-card .row .col-lg-2 {
     flex-direction: column;
   }
@@ -247,9 +250,16 @@
     display: none;
   }
   .section .category .cat-right {
-    width: 80%;
+    width: 100%;
   }
   .section .category .cat-right.nd {
     width: 100%;
+  }
+  .section .category .cat-right.design img {
+    border-radius: 12px;
+  }
+  .section .category .cat-right.design {
+    border: 2px solid #222;
+    border-radius: 12px;
   }
 }
