@@ -2,6 +2,8 @@
 
 ## Introduction
 
+![woodLogo1](https://github.com/ishararaviget9/woodwork-sin/assets/132211856/b78a037e-5caf-461c-8172-03d7ea464c79){:width="300px"}
+
 Welcome to [Siriwardhana Woodwork], a new platform designed to [brief description of the website's purpose]. We're excited to provide you with [features/benefits] and create an engaging online experience for our users.
 
 ## About the Author
