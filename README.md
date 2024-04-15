@@ -1,70 +1,27 @@
-# Getting Started with Create React App
+# New Website Introduction
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Introduction
 
-## Available Scripts
+Welcome to [Siriwardhana Woodwork], a new platform designed to [brief description of the website's purpose]. We're excited to provide you with [features/benefits] and create an engaging online experience for our users.
 
-In the project directory, you can run:
+## About the Author
 
-### `npm start`
+The mastermind behind Siriwardhana Woodwork is [https://github.com/ishararaviget9]. With [years of experience/credentials] in [relevant field(s)], [Ishara Siriwardhana] brings a wealth of expertise to this project. Their passion for [relevant topic] is evident in every aspect of the website.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Website Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### 1. [Feature]
 
-### `npm test`
+- Explore your favorite in the site
+- Contacts experience expert with when you want
+- Make your requirement and send it to factory and build fast
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## How to Get Started
 
-### `npm run build`
+Getting started with [Siriwardhana Woodwork] is easy! Simply [provide instructions on how users can start using the website, such as signing up, exploring features, etc.].
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Support and Feedback
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+We value your experience with [Siriwardhana Woodwork] and are committed to providing excellent support. If you have any questions, concerns, or feedback, please don't hesitate to [contact us/email us/visit our support page].
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Thank you for joining us on this journey, and we hope you enjoy exploring [https://bit.ly/Wood99] !
