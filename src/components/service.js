@@ -3,7 +3,13 @@ import "./service.css";
 import desingImg from "../assets/img/581919.jpg";
 import desing_2Img from "../assets/img/612x612.jpg";
 import { useNavigate } from "react-router-dom";
-import card1bg from "../assets/img/R.jpeg";
+import cussion from "../assets/serviceImg/cussion_seat.png";
+import pantry from "../assets/serviceImg/pantry_cupboards.png";
+import stairs from "../assets/serviceImg/stairs.png";
+import sunmoon from "../assets/serviceImg/sun_moon.jpg";
+import treecav from "../assets/serviceImg/treeart.jpg";
+import woodcav from "../assets/serviceImg/tablewoodcav.jpg";
+import ProductCard from "./ProductCard";
 
 export const Service = () => {
   const navigate = useNavigate();
@@ -13,7 +19,7 @@ export const Service = () => {
         <img src={second} alt="banner" />
 
         <div className="s-text">
-          <h1>සැඟවුණු විභවයන් හදුන්වදීම</h1>
+          <h1>සැඟවුණු විභවයන් හදුන්වාදීම</h1>
           <h1>අපගේ උනන්දුවයි</h1>
         </div>
       </div>
@@ -21,7 +27,7 @@ export const Service = () => {
         <div className="category">
           <div className="cat-left">
             <h1>
-              පාරිභෝගික නිර්මාණ, වර්තමානය සහ අනාගතය ගැලපෙන ලෙස නිර්මාණය කර ඇත
+              පාරිභෝගික නිර්මාණ, වර්තමානය සහ අනාගතය ගැලපෙන ලෙස නිර්මාණය කරමු
             </h1>
             <p>
               අපගේ ගනුදෙනුකරුවන් සමඟ අප ගොඩනඟන සබඳතා කැපී පෙනෙන නිර්මාණ සහ
@@ -63,128 +69,52 @@ export const Service = () => {
       <div className="section">
         <div className="container-card">
           <div className="row">
-            <div className="col-lg-1">
-              <h2>Featured Products</h2>
-            </div>
-
+            <h1>විශේෂාංග නිෂ්පාදන</h1>
             <div className="col-lg-2">
-              <div className="product-thumb">
-                <div className="product-img">
-                  <img src={card1bg} alt="thumbnail-bg" />
-                </div>
-
-                <div className="product-top">
-                  <span className="product-alert">New Arrival</span>
-                </div>
-
-                <div className="product-info">
-                  <div className="align">
-                    <h5>Tree pot</h5>
-
-                    <p>Original package design from house</p>
-                  </div>
-
-                  <div className="product-price">$25</div>
-                </div>
-              </div>
-
-              {/*--------------------------------*/}
-              <div className="product-thumb">
-                <div className="product-img">
-                  <img src={card1bg} alt="thumbnail-bg" />
-                </div>
-
-                <div className="product-top">
-                  <span className="product-alert">New Arrival</span>
-                </div>
-
-                <div className="product-info">
-                  <div className="align">
-                    <h5>Tree pot</h5>
-
-                    <p>Original package design from house</p>
-                  </div>
-
-                  <div className="product-price">$25</div>
-                </div>
-              </div>
-              {/*--------------------------------*/}
-              <div className="product-thumb">
-                <div className="product-img">
-                  <img src={card1bg} alt="thumbnail-bg" />
-                </div>
-
-                <div className="product-top"></div>
-
-                <div className="product-info">
-                  <div className="align">
-                    <h5>Tree pot</h5>
-
-                    <p>Original package design from house</p>
-                  </div>
-
-                  <div className="product-price">$25</div>
-                </div>
-              </div>
+              <ProductCard
+                imgSrc={stairs}
+                productName="ලී පඩිපෙළ"
+                description="පඩිපෙළක් හෝ පඩිපෙළ කාමරයක් යනු පඩිපෙළක් පිහිටා ඇති ගොඩනැගිල්ලක කාමරයක් වන අතර උසින් ගමන් කළ හැකි වන පරිදි මහල් අතර ඇවිදීමේ මාර්ග සම්බන්ධ කිරීමට භාවිතා කරයි. එය දැවමය වීම වඩා අලංකාරයක් එක කරයි."
+                price="$....."
+                isNew={true}
+              />
+              <ProductCard
+                imgSrc={pantry}
+                productName="පැන්ට්රි අල්මාරිය"
+                description="පැන්ට්රියක් යනු බීම වර්ග, ආහාර, පිඟන්, ගෘහස්ථ පිරිසිදු කිරීමේ නිෂ්පාදන, ලිනන් රෙදි හෝ සැපයුම් නිවසක් හෝ කාර්යාලයක් තුළ ගබඩා කර ඇති කාමරයක් හෝ අල්මාරියකි. ආහාර පාන පැන්ට්රි කුස්සියට සහායක ධාරිතාවකින් සේවය කරයි"
+                price="$....."
+                isNew={true}
+              />
+              <ProductCard
+                imgSrc={cussion}
+                productName="ලී කුෂන් සෝෆා"
+                description="සෝෆා, සෙටි, චෙස්ටර්ෆීල්ඩ් හෝ ඩේවන්පෝට් ලෙසද හැඳින්වෙන යහනක් යනු බහු පුද්ගලයින් අසුන් ගැනීම සඳහා කුෂන් කරන ලද ගෘහ භාණ්ඩයකි. එය සාමාන්‍යයෙන් උඩු මහලේ අත්වාරු සහිත බංකුවක ස්වරූපයෙන් දක්නට ලැබෙන අතර බොහෝ විට උල්පත් සහ සකස් කළ කුෂන් සහ කොට්ට සවි කර ඇත. යහනක් මූලික වශයෙන් ආසන සඳහා භාවිතා කළද, එය නිදාගැනීම සඳහා භාවිතා කළ හැක."
+                price="$....."
+                isNew={true}
+              />
             </div>
-
-            {/*---------------------------*/}
-
             <div className="col-lg-2">
-              <div className="product-thumb">
-                <div className="product-img">
-                  <img src={card1bg} alt="thumbnail-bg" />
-                </div>
-
-                <div className="product-top"></div>
-
-                <div className="product-info">
-                  <div className="align">
-                    <h5>Tree pot</h5>
-
-                    <p>Original package design from house</p>
-                  </div>
-
-                  <div className="product-price">$25</div>
-                </div>
-              </div>
-
-              {/*--------------------------------*/}
-              <div className="product-thumb">
-                <div className="product-img">
-                  <img src={card1bg} alt="thumbnail-bg" />
-                </div>
-
-                <div className="product-top"></div>
-
-                <div className="product-info">
-                  <div className="align">
-                    <h5>Tree pot</h5>
-
-                    <p>Original package design from house</p>
-                  </div>
-
-                  <div className="product-price">$25</div>
-                </div>
-              </div>
-              {/*--------------------------------*/}
-              <div className="product-thumb">
-                <div className="product-img">
-                  <img src={card1bg} alt="thumbnail-bg" />
-                </div>
-
-                <div className="product-top"></div>
-
-                <div className="product-info">
-                  <div className="align">
-                    <h5>Tree pot</h5>
-
-                    <p>Original package design from house</p>
-                  </div>
-
-                  <div className="product-price">$25</div>
-                </div>
-              </div>
+              <ProductCard
+                imgSrc={sunmoon}
+                productName="හිරු සඳ ලී කැටයම්"
+                description="ඔබේ බිත්ති සැරසිලි සාප්පු වලින් අද්විතීය හෝ අභිරුචි අතින් සාදන ලද කෑලි සඳහා අපගේ හිරු සහ සඳ ලී කැටයම් තේරීම පරීක්ෂා කරන්න."
+                price="$....."
+                isNew={true}
+              />
+              <ProductCard
+                imgSrc={treecav}
+                productName="ගස් ලී කැටයම්"
+                description="ගස් කඳන් හෝ අතු සංකීර්ණ මූර්ති බවට පරිවර්තනය කරන සිත් ඇදගන්නා කලා ආකෘතියකි."
+                price="$....."
+                isNew={true}
+              />
+              <ProductCard
+                imgSrc={woodcav}
+                productName="ලී කුඩා පිළිම"
+                description="අපගේ රූප සාප්පු වලින් අද්විතීය හෝ අභිරුචි, අතින් සාදන ලද කෑලි සඳහා අපගේ ලී කුඩා පිළිම තේරීම පරීක්ෂා කරන්න."
+                price="$....."
+                isNew={true}
+              />
             </div>
           </div>
         </div>
