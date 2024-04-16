@@ -142,7 +142,7 @@
 }
 .section .container-card .row .col-lg-2 .product-thumb .product-img {
   width: 450px;
-  height: 450px;
+  height: 100%;
   position: relative;
 }
 .section .container-card .row .col-lg-2 .product-thumb .product-img img:hover {
@@ -215,7 +215,7 @@
   color: #6c757d;
 }
 @media (max-width: 768px) and (min-width: 577px),
-  (max-width: 992px) and (min-width: 769px),
+  (max-width: 1600px) and (min-width: 769px),
   (max-width: 576px) {
   .section .category .cat-left {
     margin: 20px;
