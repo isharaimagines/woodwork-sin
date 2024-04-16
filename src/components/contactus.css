@@ -57,6 +57,13 @@
   font-family: var(--font-in-text);
   padding: 5px;
 }
+.section .cu-content h2 a {
+  font-family: var(--font-in-text);
+  padding: 5px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #6a64f1;
+}
 .section .cu-noticed {
   width: 100%;
   display: flex;
