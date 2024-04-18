@@ -1,10 +1,12 @@
 import "./contactus.css";
 import wallbg from "../assets/img/wall_wood.jpg";
 import React, { useState } from "react";
+import { useTranslation } from "react-i18next";
 
 export const Contactus = () => {
   const [notificationText, setNotificationText] = useState("Active");
   const [labelColor, setLabelColor] = useState("black");
+  const [t] = useTranslation("global");
 
   // Function to update the text content of the label
 
@@ -128,80 +130,46 @@ export const Contactus = () => {
         <img src={wallbg} alt="c-banner" />
 
         <div className="c-text">
-          <h1> අපට ඔබ වෙනුවෙන් සැපයිය හැකි සේවාවන් සඳහා</h1>
-          <h3>අපව අමතන්න</h3>
+          <h1>{t("contact.headname")}</h1>
+          <h3>{t("navbar.Contact")}</h3>
         </div>
       </div>
 
       <div className="section">
         <div className="cu-content">
-          <h1>නොමිලේ ඇස්තමේන්තුවක් ඉල්ලන්න.</h1>
-          <h2>දුරකතන අංකය: (+94) 771923940</h2>
+          <h1>{t("contact.subtitle00")}</h1>
+          <h2>{t("contact.subtitle0")}</h2>
           <h2>
             <a href="mailto:studymotivat01@gmail.com">
-              හෝ ඊමේල් කරන්න: studymotivat01@gmail.com
+              {t("contact.subtitle1")}
             </a>
           </h2>
         </div>
         <div className="cu-noticed">
-          <p>
-            කරුණාකර ව්‍යාපෘතියේ සමස්ත විස්තරයක්, ඔබේ ස්ථානය, ආසන්න පරිමාණයක් සහ
-            භාණ්ඩය සැදිමට අවශ්‍ය ද්‍රව්‍ය හෝ නිම කිරීමේ මනාප ඇතුළත් කරන්න.
-          </p>
-          <p>
-            ඔබගේ අවශ්‍යතාවය පිළිබඳ විස්තර අපට ලැබුණු පසු, අපි අපගේ සැකසීම ආරම්භ
-            කරන්නෙමු. ඊට පසු, අපගේ ක්රියාවලිය පිළිබඳ සම්පූර්ණ විස්තරයක් ඔබට
-            ලැබෙනු ඇත. එවිට අපට දුරකථන ඇමතුමකින් කාර්යය ගැන කතා කළ හැකිය.
-          </p>
-          <p>අපි ඔබගෙ පණිවිඩ බලාපොරොත්තු වෙන් !</p>
+          <p>{t("contact.subtitle2")}</p>
+          <p>{t("contact.subtitle3")}</p>
+          <p>{t("contact.subtitle4")}</p>
         </div>
       </div>
       <hr />
       <div className="section">
         <div className="cu-noticed">
-          <h1>අපේක්ෂා කළ යුතු දේ:</h1>
+          <h1>{t("contact.needtitle")}</h1>
           <div className="cu-row">
             <div className="cu-col">
-              <h2>1. මූලික උපදේශනය</h2>
-              <p>
-                ඔබගේ ව්‍යාපෘතිය සාකච්ඡා කිරීමට සහ වගකීමක් යටතේ මිල ඇස්තමේන්තුවක්
-                සැපයීමට අපි ගාස්තු රහිත උපදේශනයක් පිරිනමමු. ඔබගේ අදහස් ගවේෂණය
-                කිරීම සඳහා අපගේ වසර ගණනාවක අත්දැකීම් ප්‍රයෝජනයට ගන්නා ලෙස අපි
-                ඔබට ආරාධනා කරන්නෙමු.
-              </p>
+              <h2>1. {t("contact.subtitle5")}</h2>
+              <p>{t("contact.subtitle6")}</p>
 
-              <h2>2. පාරිභෝගික නිර්මාණය</h2>
-              <p>
-                අපට අවශ්‍ය සියලු තොරතුරු ලැබුණු පසු, සවිස්තරාත්මක වියදම් සහ
-                කාලසටහනක් සහිත විධිමත් යෝජනාවක් අපට සැපයිය හැකිය. ඔබ ව්‍යාපෘතිය
-                සමඟ ඉදිරියට යාමට සූදානම් නම්, දිනයක් වෙන් කරගැනීමට අපි ගෙවීමෙන්
-                10%ක් ඉල්ලා සිටිමු. ඔබගේ අද්විතීය නිර්මාණ නිර්මාණය කිරීම සහ ඔබේ
-                ව්‍යාපෘතියේ විස්තර සාකච්ඡා කිරීම සඳහා අපි පසු විපරමක් සැලසුම්
-                කරමු.
-              </p>
+              <h2>2. {t("contact.subtitle7")}</h2>
+              <p>{t("contact.subtitle8")}</p>
 
-              <h2>3. ගොඩනැගිම </h2>
-              <p>
-                අවසාන සැලසුම ගැන ඔබ සතුටු වන විට, අපි ගොඩනැගීමට සූදානම්.
-                ගොඩනැගීම ආරම්භ කිරීමට ටික වේලාවකට පෙර, ඇණවුම් ද්‍රව්‍ය ඇතුළුව,
-                ඔබේ ව්‍යාපෘතියේ ඉදිකිරීම් සඳහා 70% ක ගෙවීමක් අපට අවශ්‍ය වේ. අපි
-                ඔබේ වැඩ කොටස අපගේ වැඩ සාප්පුව තුළ සකස් කරමු.
-              </p>
+              <h2>3. {t("contact.subtitle9")}</h2>
+              <p>{t("contact.subtitle10")}</p>
 
-              <h2>4. භාරදීම සහ ස්ථාපනය </h2>
-              <p>
-                ඉදිකිරීම් වලින් බහුතරයක් අපගේ වැඩපල තුළ සිදු වේ; මෙය ස්ථාපනය
-                සඳහා ගතවන කාලය අවම කරයි, එවිට ඔබේ නිවසට හැකි තරම් කුඩා බාධා ඇති
-                වේ. ඔබගේ ව්‍යාපෘතිය නිශ්චිතවම ස්ථාපනය කර ඇති බව සහතික කිරීමට
-                පුහුණු වූ අපගේම අත්කම් නිර්මාණකරුවන් විසින් සියලුම ස්ථාපනය සිදු
-                කරනු ලැබේ.
-              </p>
+              <h2>4. {t("contact.subtitle11")}</h2>
+              <p>{t("contact.subtitle12")}</p>
 
-              <p>
-                මෙම ක්‍රියාවලිය පුරාම, ඔබට ඇති ඕනෑම ප්‍රශ්නයකට පිළිතුරු දීමට අප
-                බැදී ඇත. ඔබට ප්‍රශ්න ඇත්නම් (+94) 771234567 හෝ info@gmail.com
-                වෙත විද්‍යුත් තැපෑලෙන් අප අමතන්න.
-              </p>
+              <p>{t("contact.subtitle13")}</p>
             </div>
             <div className="cu-col">
               <div className="formbold-main-wrapper">

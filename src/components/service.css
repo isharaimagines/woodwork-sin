@@ -41,8 +41,8 @@
   color: #ffffff;
   font-size: 4em;
   line-height: 1.6em;
-  letter-spacing: 1px;
-  font-family: var(--font-in-text);
+  letter-spacing: 4px;
+  font-family: Righteous, sans-serif;
 }
 .section .category {
   display: flex;

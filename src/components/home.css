@@ -54,12 +54,13 @@
   color: #502b21;
   font-size: 4em;
   line-height: 1.1em;
-  letter-spacing: 1px;
-  font-family: var(--font-in-text);
+  letter-spacing: 2px;
+  font-family: Righteous, sans-serif;
 }
 .container .text h3 {
   text-align: center;
-  font-family: var(--font-in-text);
+  font-family: Righteous, sans-serif;
+  letter-spacing: 4px;
 }
 @keyframes zooms-text {
   0% {
@@ -235,7 +236,7 @@
     text-align: left;
   }
   .container .text {
-    top: 16%;
+    top: 35%;
   }
   .container .text h3 {
     text-align: left;

@@ -1,9 +1,13 @@
 import ImgBanner from "../assets/img/light-wood-section.jpg";
 import "./home.css";
 import { useNavigate } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 
 export const Home = () => {
   const navigate = useNavigate();
+
+  const [t] = useTranslation("global");
+
   return (
     <>
       <div className="container">
@@ -11,21 +15,17 @@ export const Home = () => {
 
         <div className="text">
           <h1>
-            දැව පාදක ගෘහභාණ්ඩ
-            <br /> සහ දැවමය ගෘහ නිර්මාණ
+            {t("header.Title")}
+            <br /> {t("header.Title2")}
           </h1>
-          <h3>ශ්‍රී ලංකාවේ හස්ත කර්මාන්ත</h3>
+          <h3>{t("header.Title3")}</h3>
         </div>
       </div>
       <div className="section">
         <div className="content">
           <div className="left">
-            <h1>1992 සිටම සේවාව අඛණ්ඩව </h1>
-            <p>
-              තිරසාරභාවය සඳහා දැඩි කැපවීමක් සහ ආපසු පැමිණෙන සේවාදායකයින්ගේ
-              විශ්වාසවන්ත පදනමක් සමඟින්, වසර ගණනාවක් පුරා අප උපයාගත් විශ්වාසය
-              ගැන අපි ආඩම්බර වෙමු.
-            </p>
+            <h1>{t("home.titleno1")}</h1>
+            <p>{t("home.titleno2")}</p>
           </div>
           <div className="right">
             <div className="row">
@@ -34,14 +34,14 @@ export const Home = () => {
                   <i className="ri-bar-chart-grouped-line"></i>
                   <span>82%</span>
                 </div>
-                <h1>නැවත නැවතත් ගනුදෙනුකරුවන්ගෙන් පැමිණි ආදායම</h1>
+                <h1>{t("home.titleno3")}</h1>
               </div>
               <div className="col">
                 <div>
                   <i className="ri-suitcase-3-fill"></i>
                   <span>927,075SF</span>
                 </div>
-                <h1>ප්‍රමාණයක ලී පාරිභෝගික නිෂ්පාදන බවට පත් කර ඇත </h1>
+                <h1>{t("home.titleno4")}</h1>
               </div>
             </div>
             <div className="row">
@@ -50,14 +50,14 @@ export const Home = () => {
                   <i className="ri-check-fill"></i>
                   <span>1143</span>
                 </div>
-                <h1>සාර්ථකව නිම කරන ලද ව්යාපෘති</h1>
+                <h1>{t("home.titleno5")}</h1>
               </div>
               <div className="col">
                 <div>
                   <i className="ri-tree-fill"></i>
                   <span>100%</span>
                 </div>
-                <h1>භාවිතා කරන තිරසාර අමුද්‍රව්‍ය</h1>
+                <h1>{t("home.titleno6")}</h1>
               </div>
             </div>
           </div>
@@ -67,10 +67,12 @@ export const Home = () => {
       <div className="section">
         <div className="secBox">
           <div className="name">
-            <h1>කොහොමද මිලදී ගන්නේ</h1>
-            <sup>ඇණවුම් කිරීමට කරුණාකර අමතන්න හෝ email පණිවිඩයක් එවන්න!</sup>
+            <h1>{t("home.titleno7")}</h1>
+            <sup>{t("home.titleno8")}</sup>
           </div>
-          <button onClick={() => navigate("/contactus")}>අපිව අමතන්න</button>
+          <button onClick={() => navigate("/contactus")}>
+            {t("navbar.Contact")}
+          </button>
         </div>
       </div>
     </>

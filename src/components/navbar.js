@@ -1,12 +1,14 @@
 import { NavLink } from "react-router-dom";
 import "./navbar.css";
 import React, { useState } from "react";
-import logo from "../assets/img/woodLogo1.svg";
+import logo from "../assets/img/woodLogo1.png";
 import { useEffect } from "react";
+import { useTranslation } from "react-i18next";
 
 export const Navbar = () => {
   const [activeLink, setActiveLink] = useState("home");
   const [scrolled, setScrolled] = useState(false);
+  const [t, i18next] = useTranslation("global");
 
   const [isListUnorderedClicked, setListUnorderedClicked] = useState(false);
 
@@ -31,6 +33,10 @@ export const Navbar = () => {
   const handleListUnorderedClick = () => {
     setListUnorderedClicked(!isListUnorderedClicked);
     // Add your logic here to handle the click event and add another class if needed
+  };
+
+  const handleChangeLanguage = (lang) => {
+    i18next.changeLanguage(lang);
   };
 
   return (
@@ -68,7 +74,7 @@ export const Navbar = () => {
               }
               onClick={() => onUpdateActiveLink("home")}
             >
-              මුල් පිටුව
+              {t("navbar.Home")}
             </NavLink>
             <NavLink
               to="/service"
@@ -77,7 +83,7 @@ export const Navbar = () => {
               }
               onClick={() => onUpdateActiveLink("profile")}
             >
-              සේවාවන්
+              {t("navbar.Services")}
             </NavLink>
             <NavLink
               to="/about"
@@ -86,7 +92,7 @@ export const Navbar = () => {
               }
               onClick={() => onUpdateActiveLink("skills")}
             >
-              අපි ගැන
+              {t("navbar.About")}
             </NavLink>
           </div>
           <span className="navbar-text">
@@ -98,8 +104,24 @@ export const Navbar = () => {
               onClick={() => onUpdateActiveLink("projects")}
             >
               <button className="vvd">
-                <span>අපිව අමතන්න</span>
+                <span>{t("navbar.Contact")}</span>
               </button>
+            </NavLink>
+          </span>
+          <span className="navbar-text box">
+            <NavLink
+              className={
+                activeLink === "projects" ? "active navbar-link" : "navbar-link"
+              }
+              onClick={() => onUpdateActiveLink("projects")}
+            >
+              <select
+                className="vvd"
+                onChange={(e) => handleChangeLanguage(e.target.value)}
+              >
+                <option value="en">English</option>
+                <option value="sin">සිංහල</option>
+              </select>
             </NavLink>
           </span>
         </div>
