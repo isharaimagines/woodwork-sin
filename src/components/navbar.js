@@ -43,7 +43,7 @@ export const Navbar = () => {
     <nav className={scrolled ? "scrolled" : "navbar"}>
       <div className="nav-container">
         <div className="nav-top-bar">
-          <NavLink to="/" className="navbar-brand">
+          <NavLink className="navbar-brand">
             <img src={logo} alt="Logo" />
           </NavLink>
           <button
