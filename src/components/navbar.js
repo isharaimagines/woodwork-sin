@@ -43,9 +43,9 @@ export const Navbar = () => {
     <nav className={scrolled ? "scrolled" : "navbar"}>
       <div className="nav-container">
         <div className="nav-top-bar">
-          <a href="/" className="navbar-brand">
+          <NavLink to="/" className="navbar-brand">
             <img src={logo} alt="Logo" />
-          </a>
+          </NavLink>
           <button
             aria-controls="basic-navbar-nav"
             type="button"
