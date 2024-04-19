@@ -26,4 +26,4 @@ Getting started with [Siriwardhana Woodwork] is easy! Simply [provide instructio
 
 We value your experience with [Siriwardhana Woodwork] and are committed to providing excellent support. If you have any questions, concerns, or feedback, please don't hesitate to [contact us/email us/visit our support page].
 
-Thank you for joining us on this journey, and we hope you enjoy exploring [https://bit.ly/Wood99] !
+Thank you for joining us on this journey, and we hope you enjoy exploring [https://bit.ly/woodworks9] !
