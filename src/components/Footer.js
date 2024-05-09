@@ -45,7 +45,7 @@ export const Footer = () => {
               <a href="https://t.me/DroidImaginalytic">
                 <i className="ri-telegram-fill"></i>
               </a>
-              <a href="https://ishararaviget9.github.io/myprofile/">
+              <a href="https://instagram.com/ishararaviget9">
                 <i className="ri-instagram-line"></i>
               </a>
               <a href="https://ishararaviget9.github.io/myprofile/">
