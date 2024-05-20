@@ -11,7 +11,7 @@
 .s-container {
   width: 100%;
   align-items: center;
-  height: 110vh;
+  height: 700px;
   justify-content: center;
   flex-direction: column;
   display: flex;
@@ -24,21 +24,17 @@
   object-fit: cover;
 }
 
-.s-container .s-text {
-  position: absolute;
+.section .s-text {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  z-index: 100;
-  top: 60%;
-  left: auto;
-  background: rgba(34, 34, 34, 0.6);
   padding: 20px;
 }
-.s-container .s-text h1 {
+.section .s-text h1 {
   text-align: center;
-  color: #ffffff;
+  color: #222;
   font-size: 4em;
   line-height: 1.6em;
   letter-spacing: 4px;
@@ -46,22 +42,21 @@
 }
 .section .category {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 50px 150px 50px 150px;
 }
 .section .category .cat-left {
-  width: 50%;
+  width: 45%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
+  align-items: flex-start;
 }
 .section .category .cat-left h1 {
   font-weight: 300;
   font-style: normal;
   font-size: 40px;
-  letter-spacing: 1px;
   text-transform: none;
   line-height: 1.3em;
   font-family: var(--font-in-text);
@@ -82,10 +77,11 @@
 .section .category .cat-right {
   margin: 20px;
   width: 600px;
-  height: 400px;
+  height: 500px;
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: rgba(3, 102, 214, 0.3) 0px 0px 0px 3px;
 }
 .section .category .cat-right.nd {
   width: 600px;
@@ -96,7 +92,7 @@
 .section .category .cat-right img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .section .container-card {
   display: flex;
@@ -112,6 +108,10 @@
   justify-content: space-between;
   width: 100%;
   cursor: pointer;
+}
+.section .container-card .row h1 {
+  font-size: 42px;
+  text-align: center;
 }
 .section .container-card .row .col-lg-1 {
   width: 100%;
@@ -142,7 +142,7 @@
 }
 .section .container-card .row .col-lg-2 .product-thumb .product-img {
   width: 450px;
-  height: 100%;
+  height: 450px;
   position: relative;
 }
 .section .container-card .row .col-lg-2 .product-thumb .product-img img:hover {
@@ -217,6 +217,9 @@
 @media (max-width: 768px) and (min-width: 577px),
   (max-width: 1600px) and (min-width: 769px),
   (max-width: 576px) {
+  .section .container-card {
+    padding: 8px;
+  }
   .section .category .cat-left {
     margin: 20px;
     width: 100%;
@@ -229,6 +232,7 @@
   }
   .section .container-card .row .col-lg-2 {
     flex-direction: column;
+    margin: 0px;
   }
   .section .container-card .row .col-lg-2 .product-thumb {
     width: 100%;
@@ -264,5 +268,16 @@
   .section .category .cat-right.design {
     border: 2px solid #222;
     border-radius: 12px;
+  }
+  .section .container-card .row .col-lg-2 .product-thumb .product-img {
+    width: 99%;
+  }
+  .section .s-text {
+    width: 98%;
+    padding: 20px;
+  }
+  .section .s-text h1 {
+    font-size: 3em;
+    letter-spacing: 0px;
   }
 }

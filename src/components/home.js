@@ -2,8 +2,13 @@ import ImgBanner from "../assets/img/light-wood-section.jpg";
 import "./home.css";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import React, { useEffect } from "react";
 
 export const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const navigate = useNavigate();
 
   const [t] = useTranslation("global");

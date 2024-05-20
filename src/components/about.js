@@ -2,8 +2,13 @@ import "./about.css";
 import profile_bg from "../assets/img/product-freewall-1.jpg";
 import { useNavigate } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import React, { useEffect } from "react";
 
 export const About = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const navigate = useNavigate();
   const [t] = useTranslation("global");
 

@@ -1,9 +1,13 @@
 import "./contactus.css";
-import wallbg from "../assets/img/wall_wood.jpg";
-import React, { useState } from "react";
+import wallbg from "../assets/img/contact_banner.jpg";
+import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
 
 export const Contactus = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   const [notificationText, setNotificationText] = useState("Active");
   const [labelColor, setLabelColor] = useState("black");
   const [t] = useTranslation("global");
@@ -127,12 +131,11 @@ export const Contactus = () => {
   return (
     <>
       <div className="c-container">
-        <img src={wallbg} alt="c-banner" />
-
         <div className="c-text">
-          <h1>{t("contact.headname")}</h1>
           <h3>{t("navbar.Contact")}</h3>
+          <h1>{t("contact.headname")}</h1>
         </div>
+        <img src={wallbg} alt="c-banner" />
       </div>
 
       <div className="section">
